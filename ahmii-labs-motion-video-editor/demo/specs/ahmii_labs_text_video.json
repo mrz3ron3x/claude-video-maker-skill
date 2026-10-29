@@ -1,0 +1,655 @@
+{
+  "output": "../videos/ahmii_labs_text_video_2k.mp4",
+  "aspect": "16:9",
+  "resolution": 1440,
+  "fps": 30,
+  "auto_duration": false,
+  "theme": {
+    "accent": [
+      255,
+      46,
+      151
+    ],
+    "text": [
+      255,
+      255,
+      255
+    ],
+    "muted": [
+      150,
+      235,
+      255
+    ],
+    "bgs": [
+      [
+        [
+          10,
+          2,
+          28
+        ],
+        [
+          58,
+          8,
+          104
+        ]
+      ],
+      [
+        [
+          6,
+          4,
+          30
+        ],
+        [
+          96,
+          14,
+          120
+        ]
+      ]
+    ]
+  },
+  "bg_style": "grid",
+  "sfx": true,
+  "transition": "glitch",
+  "camera": "push_in",
+  "fx": [
+    {
+      "type": "vignette",
+      "strength": 0.6
+    },
+    {
+      "type": "grain",
+      "strength": 0.05
+    }
+  ],
+  "scenes": [
+    {
+      "type": "kinetic",
+      "text": "TEXT IN",
+      "preset": "scatter",
+      "size": 150,
+      "duration": 1.6,
+      "bg": 0,
+      "highlight": {
+        "IN": [
+          0,
+          240,
+          255
+        ]
+      },
+      "fx": [
+        {
+          "type": "glow",
+          "amount": 0.9
+        },
+        {
+          "type": "rgb_split",
+          "start": 0.0,
+          "dur": 0.5,
+          "pulse": true,
+          "distance": 16
+        },
+        {
+          "type": "shake",
+          "start": 0.7,
+          "dur": 0.25,
+          "distance": 10
+        }
+      ]
+    },
+    {
+      "type": "kinetic",
+      "text": "VIDEO OUT",
+      "preset": "tracking",
+      "size": 140,
+      "duration": 1.6,
+      "bg": 1,
+      "transition": "whip",
+      "transition_duration": 0.4,
+      "highlight": {
+        "OUT": [
+          0,
+          240,
+          255
+        ]
+      },
+      "fx": [
+        {
+          "type": "glow",
+          "amount": 0.9
+        },
+        {
+          "type": "glitch",
+          "start": 0.1,
+          "dur": 0.35
+        },
+        {
+          "type": "zoom_punch",
+          "start": 0.8,
+          "dur": 0.3,
+          "pulse": true
+        }
+      ]
+    },
+    {
+      "type": "motion",
+      "duration": 2.8,
+      "bg": 0,
+      "transition": "rgb",
+      "transition_duration": 0.4,
+      "fx": [
+        {
+          "type": "glow",
+          "amount": 0.5
+        }
+      ],
+      "layers": [
+        {
+          "type": "shape",
+          "id": "card",
+          "shape": "rounded",
+          "w": 1000,
+          "h": 340,
+          "radius": 26,
+          "fill": [
+            12,
+            4,
+            34
+          ],
+          "stroke": [
+            255,
+            46,
+            151
+          ],
+          "stroke_w": 3,
+          "x": 0.5,
+          "y": 0.5,
+          "glow": 0.6,
+          "enter": "zoom_in"
+        },
+        {
+          "type": "shape",
+          "shape": "circle",
+          "w": 18,
+          "h": 18,
+          "fill": [
+            255,
+            46,
+            151
+          ],
+          "x": 0.145,
+          "y": 0.325,
+          "enter": "pop",
+          "start": 0.2
+        },
+        {
+          "type": "shape",
+          "shape": "circle",
+          "w": 18,
+          "h": 18,
+          "fill": [
+            255,
+            210,
+            80
+          ],
+          "x": 0.17,
+          "y": 0.325,
+          "enter": "pop",
+          "start": 0.28
+        },
+        {
+          "type": "shape",
+          "shape": "circle",
+          "w": 18,
+          "h": 18,
+          "fill": [
+            0,
+            240,
+            255
+          ],
+          "x": 0.195,
+          "y": 0.325,
+          "enter": "pop",
+          "start": 0.36
+        },
+        {
+          "type": "text",
+          "text": "$ ahmii-labs  new  skill",
+          "size": 28,
+          "color": "muted",
+          "x": 0.5,
+          "y": 0.41,
+          "animate": {
+            "preset": "blur_in",
+            "stagger": 0.03
+          },
+          "start": 0.3
+        },
+        {
+          "type": "text",
+          "text": "Edit or make text-based videos for you",
+          "size": 58,
+          "width": 0.66,
+          "x": 0.5,
+          "y": 0.56,
+          "color": "text",
+          "highlight": {
+            "text-based": [
+              0,
+              240,
+              255
+            ]
+          },
+          "glow": 0.5,
+          "start": 0.5,
+          "reveal": {
+            "from": 0,
+            "to": 1,
+            "start": 0.0,
+            "dur": 1.5,
+            "ease": "linear"
+          }
+        },
+        {
+          "type": "particles",
+          "kind": "sparkle",
+          "x": 0.5,
+          "y": 0.56,
+          "count": 30,
+          "start": 1.6,
+          "life": 1.0,
+          "seed": 3
+        }
+      ]
+    },
+    {
+      "type": "kinetic",
+      "lines": [
+        {
+          "text": "Cuts.",
+          "preset": "drop"
+        },
+        {
+          "text": "Effects.",
+          "preset": "glitch"
+        },
+        {
+          "text": "Motion.",
+          "preset": "elastic"
+        }
+      ],
+      "size": 92,
+      "line_delay": 0.5,
+      "duration": 2.0,
+      "bg": 1,
+      "bg_style": "rays",
+      "transition": "zoom",
+      "transition_duration": 0.4,
+      "highlight": {
+        "Cuts.": [
+          0,
+          240,
+          255
+        ],
+        "Effects.": [
+          255,
+          46,
+          151
+        ],
+        "Motion.": [
+          0,
+          240,
+          255
+        ]
+      },
+      "fx": [
+        {
+          "type": "glow",
+          "amount": 0.7
+        },
+        {
+          "type": "shake",
+          "start": 0.45,
+          "dur": 0.25,
+          "distance": 10
+        },
+        {
+          "type": "rgb_split",
+          "start": 0.95,
+          "dur": 0.3,
+          "pulse": true,
+          "distance": 10
+        }
+      ]
+    },
+    {
+      "type": "motion",
+      "duration": 2.2,
+      "bg": 0,
+      "transition": "circle",
+      "transition_duration": 0.5,
+      "fx": [
+        {
+          "type": "glow",
+          "amount": 0.6
+        }
+      ],
+      "layers": [
+        {
+          "type": "shape",
+          "shape": "rounded",
+          "w": 420,
+          "h": 270,
+          "radius": 22,
+          "fill": [
+            12,
+            4,
+            34
+          ],
+          "stroke": [
+            0,
+            240,
+            255
+          ],
+          "stroke_w": 3,
+          "x": 0.3,
+          "y": 0.45,
+          "glow": 0.7,
+          "enter": "pop"
+        },
+        {
+          "type": "text",
+          "text": "EDIT",
+          "size": 84,
+          "color": [
+            0,
+            240,
+            255
+          ],
+          "x": 0.3,
+          "y": 0.43,
+          "glow": 0.7,
+          "enter": "zoom_in",
+          "start": 0.15
+        },
+        {
+          "type": "text",
+          "text": "your footage",
+          "size": 30,
+          "color": "muted",
+          "x": 0.3,
+          "y": 0.56,
+          "enter": "rise",
+          "start": 0.35
+        },
+        {
+          "type": "shape",
+          "shape": "rounded",
+          "w": 420,
+          "h": 270,
+          "radius": 22,
+          "fill": [
+            12,
+            4,
+            34
+          ],
+          "stroke": [
+            255,
+            46,
+            151
+          ],
+          "stroke_w": 3,
+          "x": 0.7,
+          "y": 0.45,
+          "glow": 0.7,
+          "enter": "pop",
+          "start": 0.15
+        },
+        {
+          "type": "text",
+          "text": "MAKE",
+          "size": 84,
+          "color": [
+            255,
+            46,
+            151
+          ],
+          "x": 0.7,
+          "y": 0.43,
+          "glow": 0.7,
+          "enter": "zoom_in",
+          "start": 0.3
+        },
+        {
+          "type": "text",
+          "text": "from a script",
+          "size": 30,
+          "color": "muted",
+          "x": 0.7,
+          "y": 0.56,
+          "enter": "rise",
+          "start": 0.5
+        },
+        {
+          "type": "text",
+          "text": "OR",
+          "size": 40,
+          "x": 0.5,
+          "y": 0.45,
+          "enter": "pop",
+          "start": 0.55,
+          "glow": 0.8
+        },
+        {
+          "type": "particles",
+          "kind": "burst",
+          "x": 0.5,
+          "y": 0.45,
+          "count": 60,
+          "start": 0.55,
+          "life": 1.2,
+          "seed": 5
+        },
+        {
+          "type": "shape",
+          "shape": "rect",
+          "w": 520,
+          "h": 4,
+          "fill": [
+            255,
+            46,
+            151
+          ],
+          "x": 0.5,
+          "y": 0.78,
+          "glow": 1.0,
+          "trim": {
+            "from": 0,
+            "to": 1,
+            "start": 0.9,
+            "dur": 0.6,
+            "ease": "out_cubic"
+          }
+        },
+        {
+          "type": "text",
+          "text": "text-based videos",
+          "size": 42,
+          "color": "muted",
+          "x": 0.5,
+          "y": 0.86,
+          "animate": {
+            "preset": "blur_in",
+            "stagger": 0.04
+          },
+          "start": 1.0
+        }
+      ]
+    },
+    {
+      "type": "motion",
+      "duration": 2.8,
+      "bg": 1,
+      "transition": "flash",
+      "transition_duration": 0.5,
+      "fx": [
+        {
+          "type": "glow",
+          "amount": 0.8
+        },
+        {
+          "type": "rgb_split",
+          "start": 0.0,
+          "dur": 0.4,
+          "pulse": true,
+          "distance": 12
+        }
+      ],
+      "layers": [
+        {
+          "type": "shape",
+          "shape": "ring",
+          "w": 70,
+          "h": 70,
+          "stroke": "accent",
+          "stroke_w": 5,
+          "x": 0.5,
+          "y": 0.44,
+          "start": 0.05,
+          "scale": {
+            "from": 0.4,
+            "to": 7,
+            "start": 0,
+            "dur": 0.9,
+            "ease": "out_expo"
+          },
+          "opacity": {
+            "keys": [
+              [
+                0,
+                0.9
+              ],
+              [
+                0.9,
+                0
+              ]
+            ],
+            "ease": "linear"
+          },
+          "glow": 0.6
+        },
+        {
+          "type": "particles",
+          "kind": "sparkle",
+          "x": 0.5,
+          "y": 0.44,
+          "count": 38,
+          "start": 0.2,
+          "life": 1.6,
+          "size": 11,
+          "speed": 0.9,
+          "seed": 7
+        },
+        {
+          "type": "text",
+          "text": "Ahmii Labs",
+          "size": 108,
+          "x": 0.5,
+          "y": 0.44,
+          "by": "char",
+          "highlight": {
+            "Labs": [
+              0,
+              240,
+              255
+            ]
+          },
+          "animate": {
+            "preset": "tracking",
+            "stagger": 0.035,
+            "dur": 0.7,
+            "delay": 0.15
+          },
+          "shine": {
+            "start": 0.9,
+            "dur": 0.7
+          },
+          "glow": {
+            "keys": [
+              [
+                0.15,
+                0
+              ],
+              [
+                0.7,
+                0.9
+              ],
+              [
+                2.8,
+                0.5
+              ]
+            ]
+          }
+        },
+        {
+          "type": "shape",
+          "shape": "rect",
+          "w": 420,
+          "h": 4,
+          "fill": [
+            0,
+            240,
+            255
+          ],
+          "x": 0.5,
+          "y": 0.56,
+          "glow": 1.0,
+          "trim": {
+            "from": 0,
+            "to": 1,
+            "start": 0.7,
+            "dur": 0.5,
+            "ease": "out_cubic"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Edit or make text-based videos",
+          "size": 38,
+          "color": "muted",
+          "x": 0.5,
+          "y": 0.65,
+          "enter": "rise",
+          "enter_dur": 0.5,
+          "start": 1.0,
+          "glow": 0.3
+        },
+        {
+          "type": "solid",
+          "color": [
+            255,
+            255,
+            255
+          ],
+          "opacity": {
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.07,
+                0.75
+              ],
+              [
+                0.6,
+                0
+              ]
+            ],
+            "ease": "out_cubic"
+          },
+          "blend": "add"
+        }
+      ]
+    }
+  ]
+}
