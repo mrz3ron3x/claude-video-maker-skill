@@ -1,4 +1,0 @@
-Bundled fonts are licensed under the SIL Open Font License 1.1 (https://openfontlicense.org):
-  Poppins            (c) The Poppins Project Authors
-  Noto Nastaliq Urdu, Noto Naskh Arabic, Noto Sans Devanagari   (c) The Noto Project Authors
-They may be used, embedded and redistributed (also inside videos) free of charge.
