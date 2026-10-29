@@ -1,0 +1,51 @@
+{
+  "output": "/mnt/user-data/outputs/promo.mp4",
+  "preset": "reel",
+  "theme": "gold",
+  "tts": {
+    "lang": "en"
+  },
+  "watermark": "Brand",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Nova Bottle",
+      "subtext": "Fresh water, all day",
+      "animation": "words",
+      "narration": "Meet Nova Bottle. Fresh water, all day."
+    },
+    {
+      "type": "stat",
+      "value": "10,000+",
+      "subtext": "happy customers",
+      "narration": "Over ten thousand happy customers."
+    },
+    {
+      "type": "chart",
+      "text": "Cold for hours",
+      "items": [
+        "Nova:24",
+        "Others:8",
+        "Plastic:2"
+      ],
+      "narration": "Nova stays cold three times longer."
+    },
+    {
+      "type": "steps",
+      "text": "Order in 3 steps",
+      "items": [
+        "Pick a color",
+        "Pay on delivery",
+        "Enjoy"
+      ],
+      "transition": "slide"
+    },
+    {
+      "type": "outro",
+      "text": "Order Now",
+      "subtext": "novabottle.com",
+      "cta": "Free delivery this week",
+      "transition": "wipe"
+    }
+  ]
+}

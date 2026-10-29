@@ -1,0 +1,31 @@
+{
+  "output": "ae_kinetic_demo.mp4",
+  "preset": "reel",
+  "theme": "cyber",
+  "bg_style": "aurora",
+  "sfx": true,
+  "transition": "whip",
+  "fx": [{"type": "vignette", "strength": 0.55}, {"type": "grain", "strength": 0.05}],
+  "camera": "push_in",
+  "scenes": [
+    {"type": "kinetic", "text": "MAKE IT MOVE", "subtext": "After Effects style, from one JSON file",
+     "preset": "tracking", "size": 84, "highlight": ["MOVE"], "duration": 3.4, "bg_style": "grid",
+     "fx": [{"type": "glow", "amount": 0.8}, {"type": "rgb_split", "start": 0.0, "dur": 0.5, "pulse": true, "distance": 14}]},
+    {"type": "kinetic", "lines": ["Type that", {"text": "slides", "preset": "mask_up"}, {"text": "scatters", "preset": "scatter"}, {"text": "and lands", "preset": "elastic"}],
+     "size": 74, "line_delay": 0.45, "duration": 4.2, "transition": "zoom"},
+    {"type": "ring", "value": 87, "text": "Render quality", "subtext": "tuned for phones", "duration": 3.6, "transition": "glitch",
+     "fx": [{"type": "glow", "amount": 0.6}]},
+    {"type": "motion", "duration": 4.0, "transition": "circle", "bg_style": "stars",
+     "layers": [
+       {"type": "shape", "id": "orbit", "shape": "ring", "w": 360, "h": 360, "stroke": "muted", "stroke_w": 3, "opacity": 0.35, "x": 0.5, "y": 0.42, "enter": "zoom_in"},
+       {"type": "null", "id": "pivot", "x": 0.5, "y": 0.42, "rotation": "t*70"},
+       {"type": "shape", "shape": "circle", "w": 54, "h": 54, "fill": "accent", "parent": "pivot", "dx": 180, "dy": 0, "glow": 1.2, "enter": "pop"},
+       {"type": "shape", "shape": "star", "w": 60, "h": 60, "fill": "gold", "parent": "pivot", "dx": -180, "dy": 0, "glow": 1.0, "rotation": "t*-140", "enter": "pop", "start": 0.2},
+       {"type": "counter", "to": 1280, "commas": true, "size": 96, "x": 0.5, "y": 0.42, "count_dur": 1.8, "start": 0.3, "color": "text", "glow": 0.6},
+       {"type": "text", "text": "frames per second of fun", "size": 38, "color": "muted", "x": 0.5, "y": 0.72, "animate": {"preset": "blur_in", "stagger": 0.1}, "start": 0.9},
+       {"type": "particles", "kind": "embers", "count": 40, "life": 3.0, "seed": 4}
+     ]},
+    {"type": "logo_reveal", "text": "AHMII LABS", "subtext": "Motion that ships", "duration": 4.2, "transition": "flash", "bg_style": "rays"},
+    {"type": "outro", "text": "Try it now", "subtext": "motion-video-editor v3", "cta": "JSON in, MP4 out", "animation": "mask_up", "duration": 3.4, "transition": "push"}
+  ]
+}

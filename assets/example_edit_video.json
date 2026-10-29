@@ -1,0 +1,31 @@
+{
+  "input_video": "input.mp4",
+  "output": "/mnt/user-data/outputs/demo_edited.mp4",
+  "theme": "neon",
+  "grade": "punchy",
+  "music": "music.mp3",
+  "srt": "captions.srt",
+  "scenes": [
+    {
+      "type": "title",
+      "start": 0.3,
+      "duration": 3,
+      "text": "My Product Demo",
+      "subtext": "Quick walkthrough"
+    },
+    {
+      "type": "lower_third",
+      "start": 4,
+      "duration": 3.5,
+      "text": "Ali Khan",
+      "subtext": "Founder"
+    },
+    {
+      "type": "stat",
+      "start": 12,
+      "duration": 3,
+      "value": "2x",
+      "subtext": "Faster workflow"
+    }
+  ]
+}
